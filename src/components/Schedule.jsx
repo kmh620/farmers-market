@@ -1,8 +1,10 @@
 import React from 'react';
 import Day from './Day';
+import Grid from '@material-ui/core/Grid';
 
 const masterSchedule = [
   {
+    image: '../../assets/images/cards/lents.png',
     day: 'Sunday',
     location: 'Lents International',
     hours: '9:00am - 2:00pm',
@@ -44,13 +46,17 @@ function Schedule() {
   return (
     <div>
       <hr/>
+      <Grid container spacing={24} style={{padding: 24}}>
       {masterSchedule.map((day, index) =>
+        <Grid item xs={12} sm={6} lg={4} xl={3}>
         <Day day={day.day}
           location={day.location}
           hours={day.hours}
           booth={day.booth}
           key={index}/>
+      </Grid>
       )}
+      </Grid>
     </div>
   );
 }
