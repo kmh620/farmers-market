@@ -1,13 +1,15 @@
 import React from 'react';
-import TicketList from './TicketList';
+import Schedule from './Schedule';
 import Header from './Header';
+import ProduceList from './ProduceList';
 
 
 function App(){
   return (
     <div>
       <Header/>
-      <TicketList/>
+      <Schedule/>
+      <ProduceList/>
     </div>
   );
 }
