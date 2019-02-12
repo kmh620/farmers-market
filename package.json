@@ -1,5 +1,5 @@
 {
-  "name": "react-help-queue-example",
+  "name": "farmers-market",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,17 +9,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/epicodus-lessons/react-help-queue-example.git"
-  },
-  "author": "",
+  "author": "Katrina Hockman, Brooke Perry",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/epicodus-lessons/react-help-queue-example/issues"
-  },
-  "homepage": "https://github.com/epicodus-lessons/react-help-queue-example#readme",
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",

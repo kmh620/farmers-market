@@ -6,10 +6,11 @@ function Day(props){
     <div>
       <style global jsx>{`
         div {
+          display: inline-block;
           background-color: lightsteelblue;
         }
       `}</style>
-    <h3><em>{props.day}</em></h3>
+      <h3><em>{props.day}</em></h3>
       <p>{props.location}</p>
       <p>{props.hours}</p>
       <p>{props.booth}</p>

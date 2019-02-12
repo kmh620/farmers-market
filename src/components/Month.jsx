@@ -9,8 +9,8 @@ function Month(props){
         {props.selection.map(function(item, index){
           return <li key={ index }>{item}</li>;
         })}
-    </ul>
-    <hr></hr>
+      </ul>
+      <hr></hr>
     </div>
   );
 }
