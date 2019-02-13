@@ -44,8 +44,11 @@ class Month extends React.Component {
   }
 
   handleExpandClick(){
+    if (this.state.expanded === false){
     this.setState({expanded: true});
-  
+  } else {
+    this.setState({expanded: false});
+  }
 }
 
     render(){
@@ -56,7 +59,7 @@ class Month extends React.Component {
 
             <h2>{this.props.month}</h2>
             <hr></hr>
-
+            <CardActions>
             <IconButton
               className={classnames(classes.expand, {
                 [classes.expandOpen]: this.state.expanded,
@@ -67,7 +70,7 @@ class Month extends React.Component {
               >
               <ExpandMoreIcon />
             </IconButton>
-            <CardActions>
+          </CardActions>
               <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
                 <CardContent>
                   <ul>
@@ -78,7 +81,7 @@ class Month extends React.Component {
 
                   </CardContent>
                 </Collapse>
-              </CardActions>
+
             </Card>
           </div>
         );
