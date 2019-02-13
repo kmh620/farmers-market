@@ -18,23 +18,24 @@ import Typography from '@material-ui/core/Typography';
 
 const cardStyle = {
   maxWidth: 345,
-}
+  fontSize: '16px'
+};
 
 function Day(props){
   return (
-      // <style global jsx>{`
-      //   div {
-      //     display: inline-block;
-      //   }
-      // `}</style>
-      // <CardMedia
-      //   style={{height: 10, paddingTop: '20%'}}
-      //   image={props.day.image}/>
+  // <style global jsx>{`
+  //   div {
+  //     display: inline-block;
+  //   }
+  // `}</style>
+  // <CardMedia
+  //   style={{height: 10, paddingTop: '20%'}}
+  //   image={props.day.image}/>
 
-      <div>
-        { props.day ? (
-          <Card style={cardStyle}>
-            <CardActionArea>
+    <div>
+      { props.day ? (
+        <Card style={cardStyle}>
+          <CardActionArea>
             <CardContent>
               <h3><em>{props.day}</em></h3>
               <p>{props.location}</p>
@@ -42,8 +43,8 @@ function Day(props){
               <p>{props.booth}</p>
             </CardContent>
           </CardActionArea>
-          </Card>
-        ): null }
+        </Card>
+      ): null }
     </div>
   );
 }
