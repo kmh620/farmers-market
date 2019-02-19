@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
+// import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
+// import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import Typography from '@material-ui/core/Typography';
+// import Typography from '@material-ui/core/Typography';
 
 
 // const styles = {
@@ -16,12 +16,12 @@ import Typography from '@material-ui/core/Typography';
 //   }
 // };
 
-const cardStyle = {
-  maxWidth: 345,
-  fontSize: '16px'
-};
 
 function Day(props){
+  const cardStyle = {
+    maxWidth: 345,
+    fontSize: '16px'
+  };
   return (
   // <style global jsx>{`
   //   div {
